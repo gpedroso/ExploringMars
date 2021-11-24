@@ -14,11 +14,11 @@ namespace ExploringMars
                 {
                     if (positionProbe.direction == 'N')
                         positionProbe.Y += 1;
-                    if (positionProbe.direction == 'S')
+                    else if (positionProbe.direction == 'S')
                         positionProbe.Y -= 1;
-                    if (positionProbe.direction == 'E')
+                    else if (positionProbe.direction == 'E')
                         positionProbe.X += 1;
-                    if (positionProbe.direction == 'W')
+                    else if (positionProbe.direction == 'W')
                         positionProbe.X -= 1;
                 }
 
@@ -26,11 +26,11 @@ namespace ExploringMars
                 {
                     if (positionProbe.direction == 'N')
                         positionProbe.direction = 'W';
-                    if (positionProbe.direction == 'W')
+                    else if (positionProbe.direction == 'W')
                         positionProbe.direction = 'S';
-                    if (positionProbe.direction == 'S')
+                    else if (positionProbe.direction == 'S')
                         positionProbe.direction = 'E';
-                    if (positionProbe.direction == 'E')
+                    else if (positionProbe.direction == 'E')
                         positionProbe.direction = 'N';
                 }
 
@@ -38,11 +38,11 @@ namespace ExploringMars
                 {
                     if (positionProbe.direction == 'N')
                         positionProbe.direction = 'E';
-                    if (positionProbe.direction == 'E')
+                    else if (positionProbe.direction == 'E')
                         positionProbe.direction = 'S';
-                    if (positionProbe.direction == 'S')
+                    else if (positionProbe.direction == 'S')
                         positionProbe.direction = 'W';
-                    if (positionProbe.direction == 'W')
+                    else if (positionProbe.direction == 'W')
                         positionProbe.direction = 'N';
                 }
 
