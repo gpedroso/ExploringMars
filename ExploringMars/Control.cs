@@ -12,13 +12,13 @@ namespace ExploringMars
             {
                 if (move == 'M')
                 {
-                    if (positionProbe.direction == 'N')
+                    if ((positionProbe.direction == 'N') && (positionProbe.Y < spaceLimit.Y))
                         positionProbe.Y += 1;
-                    else if (positionProbe.direction == 'S')
+                    else if ((positionProbe.direction == 'S') && (positionProbe.Y > 0))
                         positionProbe.Y -= 1;
-                    else if (positionProbe.direction == 'E')
+                    else if ((positionProbe.direction == 'E') && (positionProbe.X < spaceLimit.X))
                         positionProbe.X += 1;
-                    else if (positionProbe.direction == 'W')
+                    else if ((positionProbe.direction == 'W') && (positionProbe.X > 0))
                         positionProbe.X -= 1;
                 }
 

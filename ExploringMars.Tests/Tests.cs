@@ -21,6 +21,16 @@ namespace ExploringMars.Tests
             Assert.AreEqual(expected, actual);
         }
 
+        [Test]
+        public void TestExploringLimits()
+        {
+            var limitXY = (X: 4, Y: 4);
+            var positionProbe = (X: 3, Y: 3, direction: 'E');
+            string actual = Control.ControlProbe(limitXY, positionProbe, "MMRMMRMRRM");
 
+            string expected = "4 1 E";
+
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
