@@ -1,8 +1,8 @@
 # ExploringMars
 
-Para executar, crie um texto com a estrutura proposta ou utilize o arquivo exemplo "input"
+Para executar, crie um arquivo texto com a estrutura proposta ou utilize o arquivo exemplo "input" na raíz do projeto
 
-Execute o comando "ExploringMars.exe <nome_do_arquivo>"
+Compile o programa e execute o comando "ExploringMars.exe <nome_do_arquivo>"
 
 ## Problema porposto
 
