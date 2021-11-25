@@ -8,8 +8,15 @@ namespace ExploringMars
     {
         static void Main(string[] args)
         {
+            if (args.Length == 0)
+            {
+                Console.WriteLine("Inform a file to execute the program!");
+                return;
+            }
+
             string path = args[0];
             List<string> inputData = new List<string>();
+            List<string> listResult = new List<string>();
 
             try
             {
@@ -29,11 +36,13 @@ namespace ExploringMars
 
             if (inputData.Count > 0)
             {
-                
+                listResult = Control.RunProbesControl(inputData);
             }
 
-
-
+            foreach(string result in listResult)
+            {
+                Console.WriteLine(result);
+            }
         }
     }
 }
